@@ -4,78 +4,95 @@
   <meta charset="UTF-8">
   <title>骆锦婷的简历</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { max-width: 800px; margin: auto; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; padding: 2em; line-height: 1.6; }
-    img { max-width: 200px; border-radius: 8px; }
-    h1, h2, h3 { color: #333; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>骆锦婷 简历</h1>
-  <img src="https://raw.githubusercontent.com/chemark/luojinting/main/luojinting.jpg" alt="个人照片">
-  <h2>📌 基本信息</h2>
-  <ul>
-    <li><strong>出生日期：</strong>1999-11-12</li>
-    <li><strong>电话：</strong>157-1723-0544</li>
-    <li><strong>邮箱：</strong>1471954897@qq.com</li>
-    <li><strong>户籍：</strong>湖北黄石</li>
-    <li><strong>求职意向：</strong>电商运营 / 运营</li>
-    <li><strong>期望薪资：</strong>6000 元/月</li>
-    <li><strong>工作类型：</strong>全职</li>
-    <li><strong>意向城市：</strong>武汉</li>
-  </ul>
+  <div class="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/chemark/luojinting/main/luojinting.jpg" alt="头像">
+      <h1>骆锦婷</h1>
+      <p>📍 武汉 | 🎓 互联网金融 | 💼 电商运营方向</p>
+    </header>
 
-  <h2>🎓 教育背景</h2>
-  <p><strong>湖北财税职业学院</strong><br>
-  2017.09 - 2020.06<br>
-  专业：互联网金融<br>
-  主修课程：互联网金融、财务会计、经济管理</p>
-  <p>在校期间参与摄影社、羽毛球社、迎新志愿者等活动，积极组织并维护现场秩序，提升组织与沟通能力。</p>
+    <section>
+      <h2>✨ 关于我</h2>
+      <p>我是一个微笑、自信、责任感强的女孩。四年多的工作经历横跨财务、教育、电商与编程助教，让我具备了扎实的专业技能和极强的学习适应能力。</p>
+      <p>我相信持续学习和真诚服务是长期价值的核心，也希望在工作中遇到志同道合的伙伴，一起成长，一起创造更多可能。</p>
+    </section>
 
-  <h2>💼 工作经历</h2>
+    <section>
+      <h2>📌 基本信息</h2>
+      <ul>
+        <li><strong>出生日期：</strong>1999-11-12</li>
+        <li><strong>电话：</strong>157-1723-0544</li>
+        <li><strong>邮箱：</strong>1471954897@qq.com</li>
+        <li><strong>户籍：</strong>湖北黄石</li>
+        <li><strong>意向职位：</strong>电商运营</li>
+        <li><strong>期望薪资：</strong>6000 元/月</li>
+      </ul>
+    </section>
 
-  <h3>武汉编程猫科技有限公司 — 助教老师</h3>
-  <p>2023.07 - 2025.04</p>
-  <ul>
-    <li>协助主讲老师完成少儿编程课程教学任务，涵盖图形化编程、Python基础等内容，授课对象年龄段为7-14岁。</li>
-    <li>跟进学生学习进度，制定个性化辅导计划，续费率达92%。</li>
-    <li>优化课程与教具，组织项目展示活动，提升学生实战能力。</li>
-  </ul>
+    <section>
+      <h2>🎓 教育背景</h2>
+      <p><strong>湖北财税职业学院</strong>（2017.09 - 2020.06）<br>互联网金融专业</p>
+      <p>主修：互联网金融、财务会计、经济管理</p>
+    </section>
 
-  <h3>武汉星淘惠电子商务有限公司 — 运营教学</h3>
-  <p>2022.08 - 2023.06</p>
-  <ul>
-    <li>统筹客户亚马逊店铺全流程运营：ERP系统操作、发货指导、问题答疑。</li>
-    <li>提升客户满意度与转化，推动学习进度，提升经营能力。</li>
-  </ul>
+    <section>
+      <h2>💼 工作经历</h2>
 
-  <h3>学而思教育有限责任公司 — 语文辅导老师</h3>
-  <p>2021.01 - 2022.03</p>
-  <ul>
-    <li>独立辅导两个班级学生，录制讲解视频并剪辑成片。</li>
-    <li>每周4-6场直播教学，回访家长与学生，优化课件内容。</li>
-  </ul>
+      <div class="job">
+        <h3>👩 编程猫 | 助教老师</h3>
+        <p class="time">2023.07 - 2025.04</p>
+        <ul>
+          <li>负责少儿编程课程教学协助，续班率达92%</li>
+          <li>优化课程内容，组织项目展示，提升课堂互动</li>
+        </ul>
+      </div>
 
-  <h3>武汉金山办公软件有限公司（WPS） — 财务实习生</h3>
-  <p>2020.09 - 2020.12</p>
-  <ul>
-    <li>开具增值税发票，录入金蝶系统，审核票据100%准确。</li>
-    <li>使用Excel登记台账，参与数据报表整理。</li>
-  </ul>
+      <div class="job">
+        <h3>🛒 星淘惠 | 电商运营教学</h3>
+        <p class="time">2022.08 - 2023.06</p>
+        <ul>
+          <li>统筹客户亚马逊店铺运营流程，指导ERP使用</li>
+          <li>解决经营问题，提升客户满意度与转化率</li>
+        </ul>
+      </div>
 
-  <h2>🧠 技能证书</h2>
-  <ul>
-    <li><strong>证书：</strong>初级会计职称</li>
-    <li><strong>技能：</strong>Excel（VLOOKUP、SUMIF、数据透视表等），Word，PPT，亚马逊店铺运营，视频剪辑，直播授课</li>
-  </ul>
+      <div class="job">
+        <h3>📚 学而思 | 语文辅导老师</h3>
+        <p class="time">2021.01 - 2022.03</p>
+        <ul>
+          <li>直播授课每周4-6场，满意度达98%</li>
+          <li>组织节日活动，优化课件内容，家长好评不断</li>
+        </ul>
+      </div>
 
-  <h2>💬 自我评价</h2>
-  <p>
-    我是一个微笑、自信、责任感强的女孩。四年多的工作经历横跨财务、教育、电商与编程助教四个领域，让我具备了扎实的专业技能和极强的学习适应能力。
-  </p>
-  <p>
-    我相信持续学习和真诚服务是长期价值的核心。希望在工作中遇到志同道合的伙伴，一起成长，一起创造更多可能。
-  </p>
-  <p><strong>但行好事，莫问前程。期待与贵公司共同成长！</strong></p>
+      <div class="job">
+        <h3>💼 金山办公 | 财务实习生</h3>
+        <p class="time">2020.09 - 2020.12</p>
+        <ul>
+          <li>开具发票、录入金蝶系统，审核准确率100%</li>
+          <li>整理凭证、登记台账，参与流程优化</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>🧠 技能 & 证书</h2>
+      <ul>
+        <li>初级会计职称</li>
+        <li>Excel（VLOOKUP、SUMIF、数据透视表）</li>
+        <li>Word、PPT、剪映剪辑、直播授课</li>
+        <li>亚马逊店铺运营经验</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>📮 欢迎联系我：<a href="mailto:1471954897@qq.com">1471954897@qq.com</a></p>
+      <p class="quote">“但行好事，莫问前程。”</p>
+    </footer>
+  </div>
 </body>
 </html>
