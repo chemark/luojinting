@@ -96,4 +96,8 @@ footer a {
   footer {
     display: none;
   }
+
+  .skills-section {
+    page-break-inside: avoid;
+  }
 }
