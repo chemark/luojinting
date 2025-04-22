@@ -80,3 +80,20 @@ footer a {
   font-style: italic;
   color: #aaa;
 }
+
+/* 打印优化 */
+@media print {
+  img {
+    border-radius: 50% !important;
+    box-shadow: none !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  footer {
+    display: none;
+  }
+}
