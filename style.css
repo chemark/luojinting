@@ -94,7 +94,7 @@ footer a {
   }
 
   footer {
-    display: none;
+    display: block;
   }
 
   .skills-section {
