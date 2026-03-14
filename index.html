@@ -6,37 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="editor.css">
 </head>
 
 <body>
-  <div class="toolbar" id="toolbar" role="region" aria-label="简历编辑工具栏">
-    <div class="toolbar__left">
-      <button type="button" class="btn" id="btnEdit" aria-pressed="false">编辑</button>
-      <button type="button" class="btn" id="btnPreview">预览</button>
-      <span class="sep" aria-hidden="true"></span>
-      <button type="button" class="btn" id="btnBold" title="加粗"><strong>B</strong></button>
-      <button type="button" class="btn" id="btnItalic" title="斜体"><em>I</em></button>
-      <button type="button" class="btn" id="btnUl" title="项目符号">• List</button>
-      <button type="button" class="btn" id="btnH2" title="小标题">H2</button>
-      <span class="sep" aria-hidden="true"></span>
-      <button type="button" class="btn" id="btnAddSection">新增模块</button>
-      <button type="button" class="btn" id="btnInsertImage">插入图片</button>
-      <button type="button" class="btn" id="btnInsertVideo">插入视频</button>
-      <button type="button" class="btn" id="btnInsertAudio">插入音频</button>
-    </div>
-    <div class="toolbar__right">
-      <button type="button" class="btn btn--ghost" id="btnSave">保存</button>
-      <button type="button" class="btn btn--ghost" id="btnReset">重置</button>
-      <button type="button" class="btn btn--primary" id="btnExport">导出 PDF</button>
-    </div>
-  </div>
-
-  <input id="imageInput" type="file" accept="image/*" hidden>
-
-  <div class="container" id="resume" data-resume>
+  <div class="container">
     <header>
-      <img src="luojinting.jpg" alt="头像">
+      <img src="https://raw.githubusercontent.com/chemark/luojinting/main/luojinting.jpg" alt="头像">
       <h1>骆锦婷</h1>
       <p>📍 武汉 | 🎓 互联网金融 | 💼 电商直播运营</p>
     </header>
@@ -129,54 +104,5 @@
       <p class="quote">“新的一年，拥有重新出发的勇气”</p>
     </footer>
   </div>
-
-  <div class="overlay" id="exportOverlay" hidden>
-    <div class="overlay__backdrop" data-close="1" aria-hidden="true"></div>
-    <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="导出 PDF 预览">
-      <div class="overlay__header">
-        <div class="overlay__title">
-          <div class="overlay__h">导出 PDF</div>
-          <div class="overlay__sub">拖动左侧分割线决定第 1 页结束位置，PDF 固定为 2 页 A4。</div>
-        </div>
-        <div class="overlay__tabs" role="tablist" aria-label="导出视图切换">
-          <button type="button" class="tab" id="tabFlow" role="tab" aria-selected="true">分页</button>
-          <button type="button" class="tab" id="tabPages" role="tab" aria-selected="false">预览</button>
-        </div>
-        <div class="overlay__actions">
-          <button type="button" class="btn btn--ghost" id="btnCloseExport">关闭</button>
-          <button type="button" class="btn btn--primary" id="btnDoExport">生成并下载</button>
-        </div>
-      </div>
-
-      <div class="overlay__body">
-        <div class="pane pane--flow">
-          <div class="pane__title">分割线</div>
-          <div class="flow" id="flow">
-            <div class="flow__paper" id="flowPaper">
-              <div class="flow__content" id="flowContent"></div>
-              <div class="cutline" id="cutLine" role="separator" aria-label="分页分割线" tabindex="0"></div>
-            </div>
-          </div>
-          <div class="hint" id="exportHint"></div>
-        </div>
-
-        <div class="pane pane--pages">
-          <div class="pane__title">A4 预览</div>
-          <div class="pages" id="pages">
-            <div class="a4-page" id="page1">
-              <div class="page-content" id="page1Content"></div>
-            </div>
-            <div class="a4-page" id="page2">
-              <div class="page-content" id="page2Content"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
-  <script src="editor.js"></script>
 </body>
 </html>
