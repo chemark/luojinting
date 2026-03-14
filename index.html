@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>骆锦婷的简历</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff6f91">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="简历">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="editor.css">
@@ -26,6 +32,7 @@
       <button type="button" class="btn" id="btnInsertAudio">插入音频</button>
     </div>
     <div class="toolbar__right">
+      <button type="button" class="btn btn--ghost" id="btnInstall" hidden>安装</button>
       <button type="button" class="btn btn--ghost" id="btnSave">保存</button>
       <button type="button" class="btn btn--ghost" id="btnReset">重置</button>
       <button type="button" class="btn btn--primary" id="btnExport">导出 PDF</button>
@@ -175,8 +182,9 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="vendor/html2canvas.min.js"></script>
+  <script src="vendor/jspdf.umd.min.js"></script>
+  <script src="pwa.js"></script>
   <script src="editor.js"></script>
 </body>
 </html>

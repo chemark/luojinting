@@ -1,3 +1,19 @@
+.toolbar,
+.overlay__panel,
+.btn,
+.tab {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
 .toolbar {
   position: sticky;
   top: 0;
@@ -209,6 +225,7 @@
   flex: 1;
   overflow: auto;
   padding: 12px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .flow__paper {
@@ -275,6 +292,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .a4-page {
@@ -389,6 +407,23 @@ body[data-exporting="true"] .a4-page {
   }
 
   .sep {
+    display: none;
+  }
+
+  .overlay__panel {
+    margin: 0;
+    max-width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .overlay__header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .overlay__sub {
     display: none;
   }
 }
