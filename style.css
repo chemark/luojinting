@@ -48,6 +48,12 @@ h3 {
   margin: 10px 0 4px;
 }
 
+.job-subtitle {
+  font-size: 15px;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
 .time {
   font-size: 13px;
   color: #999;
@@ -61,6 +67,10 @@ ul {
 
 .job {
   margin-bottom: 20px;
+}
+
+.job-part {
+  margin-top: 12px;
 }
 
 footer {
@@ -83,6 +93,12 @@ footer a {
 
 /* 打印优化 */
 @media print {
+  .container {
+    max-width: none;
+    padding: 14px 14px;
+    padding-bottom: 18px;
+  }
+
   img {
     border-radius: 50% !important;
     box-shadow: none !important;
@@ -91,10 +107,59 @@ footer a {
   body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+    background: #ffffff;
+    font-size: 11px;
+  }
+
+  header {
+    margin-bottom: 14px;
+  }
+
+  header img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 15px;
+    margin-top: 14px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .job-subtitle {
+    font-size: 12px;
+    margin: 8px 0 4px;
+  }
+
+  .time {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  ul {
+    line-height: 1.35;
+    margin: 4px 0;
+  }
+
+  .job {
+    margin-bottom: 10px;
   }
 
   footer {
-    display: block;
+    display: none !important;
+  }
+
+  .page-break-before {
+    break-before: page;
+    page-break-before: always;
   }
 
   .skills-section {

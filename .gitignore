@@ -1,0 +1,10 @@
+.DS_Store
+_preview-*.png
+
+# Local PDF export artifacts
+*_raw.pdf
+*_nohf.pdf
+
+# Local helper scripts (not part of site)
+export_pdf_no_header_footer.mjs
+postprocess_pdf_remove_chrome_footer.py
