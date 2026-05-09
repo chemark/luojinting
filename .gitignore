@@ -3,6 +3,7 @@ _preview-*.png
 _final-*.png
 _raw-*.png
 _ref-*.png
+_blankcheck-*.png
 
 # Local PDF export artifacts
 *_raw.pdf
