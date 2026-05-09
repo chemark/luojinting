@@ -1,5 +1,8 @@
 .DS_Store
 _preview-*.png
+_final-*.png
+_raw-*.png
+_ref-*.png
 
 # Local PDF export artifacts
 *_raw.pdf

@@ -93,10 +93,15 @@ footer a {
 
 /* 打印优化 */
 @media print {
+  @page {
+    size: A5;
+    margin: 6mm 6mm 8mm 6mm;
+  }
+
   .container {
     max-width: none;
-    padding: 14px 14px;
-    padding-bottom: 18px;
+    padding: 6px 6px;
+    padding-bottom: 6px;
   }
 
   img {
@@ -108,53 +113,55 @@ footer a {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     background: #ffffff;
-    font-size: 11px;
+    font-size: 9px;
   }
 
   header {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
 
   header img {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 6px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 4px;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   h2 {
-    font-size: 15px;
-    margin-top: 14px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 
   h3 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .job-subtitle {
-    font-size: 12px;
-    margin: 8px 0 4px;
+    font-size: 10px;
+    margin: 6px 0 3px;
   }
 
   .time {
-    font-size: 11px;
-    margin-bottom: 6px;
+    font-size: 9px;
+    margin-bottom: 4px;
   }
 
   ul {
-    line-height: 1.35;
-    margin: 4px 0;
+    line-height: 1.22;
+    margin: 3px 0;
   }
 
   .job {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   footer {
-    display: none !important;
+    display: block !important;
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 
   .page-break-before {
